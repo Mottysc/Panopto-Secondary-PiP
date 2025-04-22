@@ -1,22 +1,19 @@
 {
-    "manifest_version": 3,
-    "name": "Panopto PiP Helper",
-    "version": "1.0",
-    "description": "Triggers PiP mode for the visible secondary video on Panopto.",
-    "permissions": ["scripting", "activeTab"],
-    "action": {
-      "default_title": "Enter PiP for Secondary Video"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "host_permissions": [
-      "https://bham.cloud.panopto.eu/*"
-    ],
-    "icons": {
-      "16": "icons/icon-512.png",
-      "48": "icons/icon-512.png",
-      "128": "icons/icon-512.png"
-    }
-  }
+  "manifest_version": 3,
+  "name": "Panopto PiP Helper",
+  "version": "1.0",
+  "description": "Triggers PiP mode for the visible secondary video on Panopto.",
+  "permissions": ["scripting", "declarativeContent"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon-512.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://bham.cloud.panopto.eu/*"
+  ],
+  "icon": "icons/icon-512.png"
+}
   
